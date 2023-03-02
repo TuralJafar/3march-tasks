@@ -1,0 +1,13 @@
+int[] numbers = { 3, 7, 9, 11, 16, 19 };
+int searched_number = 11;
+int n = numbers.Length / 2;
+if (numbers[n] > searched_number) n = 0;
+for (int i = n; i < numbers.Length; i++)
+
+{
+    if (numbers[i] == searched_number)
+    {
+        Console.WriteLine(i);
+
+    }
+}
